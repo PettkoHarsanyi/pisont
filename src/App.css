@@ -54,6 +54,12 @@
   font-size: 4rem;
 }
 
+.LanguageButton{
+  position:fixed;
+  top: 10pt;
+  left: 10pt;
+}
+
 @media (max-width: 500px){
   html{
     font-size: 10px;
