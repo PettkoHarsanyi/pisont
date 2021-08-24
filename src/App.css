@@ -1,38 +1,66 @@
 .App {
   text-align: center;
+  background-color: #282C34;  
+
+  width: 100%;
+  height: 100vh;
+  font-family: 'Londrina Outline', cursive;
+  
+  color: orange;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Title{
+  font-size: 10rem;
+  margin-top: 10vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Buttons{
+  font-size: 4rem;
+  margin-top: 10vh;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Buttons *{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4vh;
+  border: 1pt solid white;
+  width: fit-content;
+  border-radius: 10vh;
+  padding: 2vh 4vh 2vh 4vh;
+  cursor: pointer;
+  transition: all 0.5s;
+  user-select: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Buttons *:hover{
+  color: greenyellow;
+  border-color: greenyellow;
+  font-size: 5rem;
+}
+
+.Buttons *:nth-child(2):hover{
+  color: yellow;
+  border-color: yellow;
+}
+
+.Buttons *:nth-child(3):hover{
+  color: aquamarine;
+  border-color: aquamarine;
+}
+
+.Text{
+  font-family: 'Londrina Solid', cursive;
+  font-size: 4rem;
+}
+
+@media (max-width: 500px){
+  html{
+    font-size: 10px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+::selection{
+  color: orange;
+  background: black;
 }
