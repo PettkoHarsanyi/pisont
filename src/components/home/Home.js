@@ -2,7 +2,6 @@ import { IconButton, Menu, MenuItem } from '@material-ui/core';
 import LanguageIcon from '@material-ui/icons/Language';
 import { useState } from 'react';
 import { Redirect } from 'react-router-dom';
-import { BackButton } from '../other/BackButton';
 import "./Home.css";
 
 function Home(){
@@ -66,7 +65,7 @@ function Home(){
 
       <div className="Title">{lang==="hun"?"Pizsony":"Pisont"}</div>
       <div className="Buttons">
-        <div onClick={()=>handleRedirect("create")}>{lang==="hun"?"Szoba létrehozása":"Create Room"}</div>
+        <div onClick={()=>handleRedirect("create")}>{lang==="hun"?"Létrehozás":"Create Room"}</div>
         <div onClick={()=>handleRedirect("connect")}>{lang==="hun"?"Csatlakozás":"Connect"}</div>
         <div onClick={()=>handleRedirect("rules")}>{lang==="hun"?"Szabályok":"Rules"}</div>
       </div>

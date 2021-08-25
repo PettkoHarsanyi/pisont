@@ -35,8 +35,9 @@
 
 .Buttons *:hover{
   color: greenyellow;
-  border-color: greenyellow;
   font-size: 5rem;
+  font-family: "Londrina Solid";
+  border: 0.5vh solid greenyellow;
 }
 
 .Buttons *:nth-child(2):hover{
@@ -63,6 +64,12 @@
 @media (max-width: 500px){
   html{
     font-size: 10px;
+  }
+}
+
+@media (min-aspect-ratio: 768/476) and (max-height: 470px){
+  html{
+    font-size:6px;
   }
 }
 
