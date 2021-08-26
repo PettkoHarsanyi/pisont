@@ -33,8 +33,7 @@ function Home(){
   }
 
   return(
-    <>
-      <div className="Home">
+    <div className="Home">
       <div className="LanguageButton">
         <IconButton
           aria-label="more"
@@ -70,7 +69,6 @@ function Home(){
         <div onClick={()=>handleRedirect("rules")}>{lang==="hun"?"Szabályok":"Rules"}</div>
       </div>
     </div>
-  </>
   )
 }
 
